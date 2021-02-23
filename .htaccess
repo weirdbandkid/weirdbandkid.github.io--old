@@ -1,18 +1,18 @@
 # MOD_REWRITE STARTS HERE
 
-RewiteEngine on
+# RewiteEngine on
 
 # does not apply to existing directories, if a folder on the server, dont change this or run the rule
 
-RewiteCond %{REQUEST_FILENAME} !-d
+# RewiteCond %{REQUEST_FILENAME} !-d
 
 # Check for file in directory that endwith .html
 
-RewiteCond %{REQUEST_FILENAME}\.html -f
+# RewiteCond %{REQUEST_FILENAME}\.html -f
 
 # here is where the page shows with the .html file extention
 
-RewriteRule ^(.*)$ $1.html [NC,L]
+# RewriteRule ^(.*)$ $1.html [NC,L]
 
 
-ErrorDocument 404.html
+ErrorDocument 404 /404.html
