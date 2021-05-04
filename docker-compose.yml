@@ -5,12 +5,12 @@ services:
      hostname: website
      image: nginx
      ports: 
-     - "443:443"
+     - "80:80"
      networks:
          website:
-     working_dir: "/usr/share/nginx/html"
+     # working_dir: "/usr/share/nginx/html"
      volumes:
-         - "./:/usr/share/nginx/html"
+         - ".:/usr/share/nginx/html"
      restart: "unless-stopped"
 networks:
   website:
