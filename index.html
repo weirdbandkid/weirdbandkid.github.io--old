@@ -7,14 +7,22 @@
   <meta name="description" content="A developer coding in JavaScript.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <script src="//js.honeybadger.io/v3.2/honeybadger.min.js" type="text/javascript"></script>
-
+<script src="//js.honeybadger.io/v3.2/honeybadger.min.js" type="text/javascript"></script>
+ 
 <script type="text/javascript">
   Honeybadger.configure({
     apiKey: 'dbbf9231',
     environment: 'production'
   });
 </script>
+  <script>
+  try {
+    ...error producing code...
+  } catch(error) {
+    Honeybadger.notify(error);
+  }
+</script>
+ 
   
   <!-- meta tags -->
   <meta itemprop="name" content="weirdbandkid">
