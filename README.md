@@ -1,5 +1,5 @@
 # Builds
-[![Workflow for checking http status codes](https://github.com/weirdbandkid/weirdbandkid.github.io/actions/workflows/main.yml/badge.svg)](https://github.com/weirdbandkid/weirdbandkid.github.io/actions/workflows/main.yml)
+[![Website Status At Push](https://github.com/weirdbandkid/weirdbandkid.github.io/actions/workflows/main.yml/badge.svg)](https://github.com/weirdbandkid/weirdbandkid.github.io/actions/workflows/main.yml)
 
 
 # This is the repo for [this site](https://www.weirdbandkid.tk)
