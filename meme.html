@@ -10,7 +10,7 @@
   <!-- meta tags -->
   <meta itemprop="name" content="weirdbandkid">
   <meta itemprop="description" content="Meme Upload Page">
-  <meta property="og:url" content="weirdbandkid.tk">
+  <meta property="og:url" content="weirdbandkid.games">
   <meta property="og:type" content="website">
   <meta property="og:title" content="weirdbandkid">
   <meta property="og:description" content="Meme Upload Page">
@@ -18,7 +18,15 @@
   <meta name="twitter:title" content="hflem_5_band">
 
 <script src="https://kit.fontawesome.com/7cf1aca7fb.js" crossorigin="anonymous"></script><link rel="stylesheet" href="./cdn/style.css">
-
+<script>
+  function validateForm() {
+  var x = document.forms["myForm"]["Meme"].value;
+  if (x == "") {
+    alert("An image must be entered!");
+    return false;
+  }
+}
+</script>
 </head>
 <body>
 <div class="full" id="rainbow" class=""><div class="rainbow"></div></div>
@@ -27,16 +35,12 @@
     <div class="name"><span>weirdbandkid</span>
       <div class="tag-line">A developer coding in JavaScript.</div>
     </div>
-    <ul class="menu">
-        <p>Click on the "Choose File" button to upload a file:</p>
-
-        <form action="404.html" method="post" enctype="multipart/form-data">
-            <input type="file" name="fileToUpload" id="fileToUpload">
-            
-          </form>
-</form>
-
-          </form>
+    
+    <form name="myForm" onsubmit="return validateForm()" method="post" required>
+      Image: <input type="file" name="Meme">
+      <input type="submit" value="Submit">
+    </form>
+     
 </div>
   <!--<script  src="./cdn/script.js"></script> -->
 </body>
